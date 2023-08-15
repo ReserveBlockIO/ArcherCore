@@ -8,20 +8,19 @@
 
   <ItemGroup>
     <Folder Include="Logging\" />
-    <Folder Include="ElipticCurve\" />
-    <Folder Include="Encryption\" />
-    <Folder Include="Email\" />
     <Folder Include="Database\" />
-    <Folder Include="Hashing\" />
     <Folder Include="BackgroundTask\" />
+    <Folder Include="Memory\" />
+    <Folder Include="Compression\" />
+    <Folder Include="Backup\" />
     <Folder Include="Port\" />
-    <Folder Include="Random\" />
-    <Folder Include="Time\" />
     <Folder Include="WebRequest\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="LiteDB" Version="5.0.17" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
