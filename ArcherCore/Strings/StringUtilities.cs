@@ -42,6 +42,13 @@ namespace ArcherCore.Strings
             return char.IsLower(ch);
         }
 
+        /// <summary>
+        /// Creates a secure string from the given input
+        /// </summary>
+        /// <param name="input">input string</param>
+        /// <returns>
+        /// Returns a SecureString
+        /// </returns>
         public static SecureString GetSecureString(string input)
         {
             var secureStr = new SecureString();
@@ -52,6 +59,13 @@ namespace ArcherCore.Strings
             return secureStr;
         }
 
+        /// <summary>
+        /// Takes a secure string and converts back to unsecure string
+        /// </summary>
+        /// <param name="secstrPassword">input SecureString</param>
+        /// <returns>
+        /// Returns a string
+        /// </returns>
         public static string ConvertSecureStringToUnsecureString(SecureString secstrPassword)
         {
             IntPtr unmanagedString = IntPtr.Zero;
@@ -66,6 +80,14 @@ namespace ArcherCore.Strings
             }
         }
 
+        /// <summary>
+        /// Takes a string and stacks it from start to finish into a IEnumerable
+        /// </summary>
+        /// <param name="str">input string</param>
+        /// <param name="chunkSize">input int</param>
+        /// <returns>
+        /// Returns a IEnumerable<string>
+        /// </returns>
         public static IEnumerable<string> GetStacks(string str, int chunkSize)
         {
             if (String.IsNullOrEmpty(str)) throw new ArgumentException();
@@ -80,6 +102,13 @@ namespace ArcherCore.Strings
             }
         }
 
+        /// <summary>
+        /// Takes a Guid and shortens it
+        /// </summary>
+        /// <param name="guid">input Guid</param>
+        /// <returns>
+        /// Returns a string
+        /// </returns>
         public static string ShortenGUID(Guid guid)
         {
             var base64 = Convert.ToBase64String(guid.ToByteArray());
@@ -87,6 +116,14 @@ namespace ArcherCore.Strings
 
             return guidBase64;
         }
+
+        /// <summary>
+        /// Takes a shotened Guid string and converts back to Guid
+        /// </summary>
+        /// <param name="shortGuid">input string</param>
+        /// <returns>
+        /// Returns a Guid
+        /// </returns>
         public static Guid RestoreGUIDFromShorten(string shortGuid)
         {
             var reconstructedGuid = new Guid(Convert.FromBase64String(shortGuid + "=="));
@@ -94,6 +131,12 @@ namespace ArcherCore.Strings
             return reconstructedGuid;
         }
 
+        /// <summary>
+        /// Prints out a Regex Cheat Sheet for easier regex creation
+        /// </summary>
+        /// <returns>
+        /// Returns a string
+        /// </returns>
         public static string GetRegexCheatSheet()
         {
             var regexCheatSheet =

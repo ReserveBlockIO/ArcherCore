@@ -7,14 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Logging\" />
     <Folder Include="Database\" />
     <Folder Include="BackgroundTask\" />
     <Folder Include="Memory\" />
     <Folder Include="Compression\" />
     <Folder Include="Backup\" />
     <Folder Include="Port\" />
-    <Folder Include="WebRequest\" />
   </ItemGroup>
 
   <ItemGroup>

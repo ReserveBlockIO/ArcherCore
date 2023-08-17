@@ -1,10 +1,14 @@
 ﻿using ArcherCore.Email;
 using ArcherCore.Http;
+using ArcherCore.Logging;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using System.Diagnostics;
 using System.Globalization;
+using System.IO;
 using System.Net.Mail;
+using System.Runtime.InteropServices;
 
 namespace ArcherCore
 {
@@ -32,6 +36,58 @@ namespace ArcherCore
 
             await httpClientBuilder.StartAsync();
             HttpVariables.HttpClientFactory = httpClientBuilder.Services.GetRequiredService<HttpService>().HttpClientFactory();
+        }
+
+        public static async Task SetupLogging(string? logPath = null, bool? useDb = false)
+        {
+            var databaseLocation = "Logs";
+            var mainFolderPath = "ArcherCore";
+
+            if (logPath == null)
+            {
+                string path = "";
+                if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
+                {
+                    string homeDirectory = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+                    path = homeDirectory + Path.DirectorySeparatorChar + mainFolderPath.ToLower() + Path.DirectorySeparatorChar + databaseLocation + Path.DirectorySeparatorChar;
+                }
+                else
+                {
+                    if (Debugger.IsAttached)
+                    {
+                        path = Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar + "Logs" + Path.DirectorySeparatorChar + databaseLocation + Path.DirectorySeparatorChar;
+                    }
+                    else
+                    {
+                        path = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + Path.DirectorySeparatorChar + mainFolderPath + Path.DirectorySeparatorChar + databaseLocation + Path.DirectorySeparatorChar;
+                    }
+                }
+
+                if (!Directory.Exists(path))
+                {
+                    Directory.CreateDirectory(path);
+                }
+
+                LoggingVariables.LoggingPath = path;
+                LoggingVariables.UseDb = useDb.Value;
+            }
+            else
+            {
+                if (!Directory.Exists(logPath))
+                {
+                    Directory.CreateDirectory(logPath);
+                }
+
+                LoggingVariables.LoggingPath = logPath;
+                LoggingVariables.UseDb = useDb.Value;
+            }
+
+            if(useDb.Value)
+            {
+                await LoggingService.InitializeDb();
+            }
+
+            _ = LoggingService.LogLoop();
         }
 
         public static async Task ForceUSCulture()

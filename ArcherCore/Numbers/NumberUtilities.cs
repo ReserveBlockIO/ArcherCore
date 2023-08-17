@@ -8,6 +8,14 @@ namespace ArcherCore.Numbers
 {
     public static class NumberUtilities
     {
+        /// <summary>
+        /// Finds the closest number to the given inputNumber
+        /// </summary>
+        /// <param name="inputNumber">input long</param>
+        /// <param name="numbers">input long[]?</param>
+        /// <returns>
+        /// Returns a long that is closest to input.
+        /// </returns>
         public static long FindClosestNumber(long inputNumber, long[]? numbers = null)
         {
             numbers = numbers == null ? new long[] { 1, 2, 4, 6, 8, 12, 16, 24, 32, 48, 64, 128, 256, 512, 1024, 2048, 5096 } : numbers;
@@ -29,6 +37,13 @@ namespace ArcherCore.Numbers
             return closestNumber;
         }
 
+        /// <summary>
+        /// Gets amount of decimal places from the given number
+        /// </summary>
+        /// <param name="number">input decimal</param>
+        /// <returns>
+        /// Returns an int count of number of decimal places.
+        /// </returns>
         public static int GetNumberOfDecimalPlaces(decimal number)
         {
             var decimalsUsed = BitConverter.GetBytes(decimal.GetBits(number)[3])[2];

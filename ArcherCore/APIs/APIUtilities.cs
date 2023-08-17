@@ -11,12 +11,13 @@ namespace ArcherCore.APIs
     public static class APIUtilities
     {
         //"https://api.github.com/repos/ReserveBlockIO/ReserveBlock-Core/releases/latest"
-        public static async Task<Release?> GetLatestGithubRelease(string url)
+        public static async Task<Release?> GetLatestGithubRelease(string url, string productName, string productVersion)
         {
             try
             {
                 HttpClient client = new HttpClient();
-                var productValue = new ProductInfoHeaderValue("RBX-Version-Check", "1.0");
+                //var productValue = new ProductInfoHeaderValue("RBX-Version-Check", "1.0");
+                var productValue = new ProductInfoHeaderValue(productName, productVersion);
 
                 client.DefaultRequestHeaders.UserAgent.Add(productValue);
                 var httpResponse = await client.GetAsync(url);

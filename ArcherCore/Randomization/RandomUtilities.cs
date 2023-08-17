@@ -9,6 +9,15 @@ namespace ArcherCore.Randomization
 {
     public static class RandomUtilities 
     {
+        /// <summary>
+        /// This method gets a random string based on length of numOfChars
+        /// </summary>
+        /// <param name="numOfChars">input int</param>
+        /// <param name="onlyLetters">input bool</param>
+        /// <param name="addTimestamp">input bool</param>
+        /// <returns>
+        /// Returns a random string
+        /// </returns>
         public static string GetRandomString(int numOfChars, bool onlyLetters = false, bool addTimestamp = false)
         {
             var chars = !onlyLetters ? "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789" : "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
@@ -25,6 +34,14 @@ namespace ArcherCore.Randomization
             return finalString;
         }
 
+        /// <summary>
+        /// This method gets a random number between min and max
+        /// </summary>
+        /// <param name="min">input int</param>
+        /// <param name="max">input int</param>
+        /// <returns>
+        /// Returns a int between min and max
+        /// </returns>
         public static int GetRandomNumber(int? min = 0, int? max = int.MaxValue)
         {
             int randomNumber = 0;
