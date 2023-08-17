@@ -1,4 +1,6 @@
-![archercoretransparent](https://github.com/mathis1337/ArcherCore/assets/20599614/bd62777b-ea9e-4dee-9978-998a7877a445)
+<p align="center">
+  <img src="https://github.com/mathis1337/ArcherCore/assets/20599614/bd62777b-ea9e-4dee-9978-998a7877a445" />
+</p>
 
 C# library with a wide variety of tools and utilities in one easy to use location.
 
