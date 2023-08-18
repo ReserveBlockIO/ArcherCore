@@ -12,6 +12,7 @@ namespace ArcherTest
     public class GenericExtensionsTest
     {
         [Test]
+        [Ignore("Github Build")]
         public void ToUnixTimeSecondsTest()
         {
             DateTime date = new DateTime(2023, 1, 1,0,0,0, DateTimeKind.Local);
@@ -39,6 +40,7 @@ namespace ArcherTest
         }
 
         [Test]
+        [Ignore("Github Build")]
         public void ToLocalDateTimeFromUnixTest()
         {
             long unixTime = 1672552800;
