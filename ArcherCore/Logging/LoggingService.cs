@@ -12,7 +12,7 @@ namespace ArcherCore.Logging
     public static class LoggingService
     {
         /// <summary>
-        /// Starts the logging loop for logging services.
+        /// Starts the logging loop for logging services. No exit or stop parameters. Will stop when app stops.
         /// </summary>
         public static async Task LogLoop()
         {
