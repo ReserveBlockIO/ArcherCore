@@ -12,14 +12,6 @@ namespace ArcherCore.Extensions
 {
     public static class GenericExtensions
     {
-        public static IEnumerable<T> ToCircular<T>(this IEnumerable<T> source)
-        {
-            while (true)
-            {
-                foreach (var x in source) yield return x;
-            }
-        }
-
         /// <summary>
         /// Takes a file path string and returns its extension
         /// </summary>
@@ -77,13 +69,6 @@ namespace ArcherCore.Extensions
             frDateTime = frDateTime.AddSeconds(unixTime).ToUniversalTime();
             return frDateTime;
         }
-        public static T[] Rotate<T>(this IEnumerable<T> list, int numberOfRotations)
-        {
-            var newEnd = list.Take(numberOfRotations);
-            var newBegin = list.Skip(numberOfRotations);
-            return newBegin.Union(newEnd).ToArray();
-        }
-
         public static bool SecureStringCompare(this SecureString s1, SecureString s2)
         {
             if (s1 == null)
@@ -164,17 +149,6 @@ namespace ArcherCore.Extensions
             return stringToBase64;
         }
 
-        /// <summary>
-        /// Converts a string array into a space delimited string
-        /// </summary>
-        /// <returns>Space delimited string</returns>
-        public static string ToStringFromArray(this string[] source)
-        {
-            var output = string.Join(" ", source);
-
-            return output;
-        }
-
         public static string ToStringFromBase64(this string source)
         {
             var base64EncodedString = Convert.FromBase64String(source);
@@ -189,6 +163,17 @@ namespace ArcherCore.Extensions
             return byteArrayFromBase64;
         }
 
+        /// <summary>
+        /// Converts a string array into a space delimited string
+        /// </summary>
+        /// <returns>Space delimited string</returns>
+        public static string ToStringFromArray(this string[] source)
+        {
+            var output = string.Join(" ", source);
+
+            return output;
+        }
+
         public static byte[] ToCompress(this byte[] bytes)
         {
             using (var memoryStream = new MemoryStream())
@@ -198,6 +183,19 @@ namespace ArcherCore.Extensions
                     gzipStream.Write(bytes, 0, bytes.Length);
                 }
                 return memoryStream.ToArray();
+            }
+        }
+        public static byte[] ToDecompress(this byte[] s)
+        {
+            var bytes = s;
+            using (var msi = new MemoryStream(bytes))
+            using (var mso = new MemoryStream())
+            {
+                using (var gs = new GZipStream(msi, CompressionMode.Decompress))
+                {
+                    gs.CopyTo(mso);
+                }
+                return mso.ToArray();
             }
         }
         public static string ToCompress(this string s)
@@ -226,6 +224,29 @@ namespace ArcherCore.Extensions
                 }
                 return Encoding.Unicode.GetString(mso.ToArray());
             }
+        }
+        public static int ToWordCount(this string text)
+        {
+            int wordCount = 0, index = 0;
+
+            // skip whitespace until first word
+            while (index < text.Length && char.IsWhiteSpace(text[index]))
+                index++;
+
+            while (index < text.Length)
+            {
+                // check if current char is part of a word
+                while (index < text.Length && !char.IsWhiteSpace(text[index]))
+                    index++;
+
+                wordCount++;
+
+                // skip whitespace until next word
+                while (index < text.Length && char.IsWhiteSpace(text[index]))
+                    index++;
+            }
+
+            return wordCount;
         }
         public static bool ToWordCountCheck(this string text, int count)
         {

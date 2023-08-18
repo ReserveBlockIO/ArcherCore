@@ -1,6 +1,7 @@
 ﻿using ArcherCore.Email;
 using ArcherCore.Http;
 using ArcherCore.Logging;
+using ArcherCore.Memory;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
@@ -36,6 +37,12 @@ namespace ArcherCore
 
             await httpClientBuilder.StartAsync();
             HttpVariables.HttpClientFactory = httpClientBuilder.Services.GetRequiredService<HttpService>().HttpClientFactory();
+        }
+
+        public static async Task SetupMemoryLogger(decimal memoryOverloadAmount = 800M)
+        {
+            await MemoryService.InitializeMemory(memoryOverloadAmount);
+            _ = MemoryService.MemoryLoop();
         }
 
         public static async Task SetupLogging(string? logPath = null, bool? useDb = false)
