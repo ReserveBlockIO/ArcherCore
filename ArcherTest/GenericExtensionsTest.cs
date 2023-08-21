@@ -12,13 +12,12 @@ namespace ArcherTest
     public class GenericExtensionsTest
     {
         [Test]
-        [Ignore("Github Build")]
         public void ToUnixTimeSecondsTest()
         {
-            DateTime date = new DateTime(2023, 1, 1,0,0,0, DateTimeKind.Local);
+            DateTime date = new DateTime(2023, 1, 1,0,0,0, DateTimeKind.Utc);
             var unixDate = date.ToUnixTimeSeconds();
 
-            if (unixDate == 1672552800)
+            if (unixDate == 1672531200)
                 Assert.Pass();
 
             Assert.Fail();
@@ -40,7 +39,6 @@ namespace ArcherTest
         }
 
         [Test]
-        //[Ignore("Github Build")]
         public void ToLocalDateTimeFromUnixTest()
         {
             long unixTime = 1672552800;
