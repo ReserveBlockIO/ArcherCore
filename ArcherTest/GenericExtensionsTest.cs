@@ -40,13 +40,14 @@ namespace ArcherTest
         }
 
         [Test]
-        [Ignore("Github Build")]
+        //[Ignore("Github Build")]
         public void ToLocalDateTimeFromUnixTest()
         {
             long unixTime = 1672552800;
-            var localDate = new DateTime(2023, 1, 1,0,0,0, DateTimeKind.Local);
+            var localDate = new DateTime(2023, 1, 1,0,0,0, DateTimeKind.Utc);
+            var convertedUnixTime = unixTime.ToLocalDateTimeFromUnix();
 
-            if (unixTime.ToLocalDateTimeFromUnix() == localDate)
+            if (convertedUnixTime == localDate)
                 Assert.Pass();
 
             Assert.Fail();
