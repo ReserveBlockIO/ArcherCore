@@ -25,6 +25,32 @@ ArcherCore is a collection of common tools used in C# (in my opinion) that are s
 * Library
 * Visual Studio 2022 | https://visualstudio.microsoft.com/vs/
 
+# Core Features (Statements, expressions, etc)
+
+This library current has utils for the following:
+- Compression
+- CSV Reader
+- ECDSA
+- Email
+- Encryption
+- Extension Methods
+- File IO
+- File Download
+- Hashing
+- Http
+- IP
+- Logging (Both Text File and DB)
+- Memory
+- Numbers
+- Pinging
+- Port Checking
+- Randomization
+- Strings
+- Time
+- Timers
+- Web Request
+- Web Server
+
 # Contributing to ArcherCore
 We love your input! We want to make contributing to this project as easy and transparent as possible, whether it's:
 
