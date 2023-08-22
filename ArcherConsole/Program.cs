@@ -18,17 +18,6 @@ internal class Program
         string[] args2 = new string[] { };
         await ArcherCore.Archer.SetupWebServer(args2);
 
-        //var _httpClientFactory = HttpVariables.HttpClientFactory;
-        //using(var client = _httpClientFactory.CreateClient())
-        //{
-        //    var productValue = new ProductInfoHeaderValue("RBX-Version-Check", "1.0");
-
-        //    client.DefaultRequestHeaders.UserAgent.Add(productValue);
-        //    var httpResponse = await client.GetAsync("https://api.github.com/repos/ReserveBlockIO/ReserveBlock-Core/releases/latest");
-        //    var responseString = await httpResponse.Content.ReadAsStringAsync();
-        //    var release = JsonConvert.DeserializeObject<Release>(responseString.ToString());
-        //}
-
         while (true)
         {
             Console.Write("» ");
