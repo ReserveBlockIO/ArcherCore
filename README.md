@@ -25,7 +25,7 @@ ArcherCore is a collection of common tools used in C# (in my opinion) that are s
 * Library
 * Visual Studio 2022 | https://visualstudio.microsoft.com/vs/
 
-# Core Features (Statements, expressions, etc)
+# Core Features
 
 This library current has utils for the following:
 - Compression
