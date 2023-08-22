@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Security;
@@ -129,6 +130,34 @@ namespace ArcherCore.Strings
             var reconstructedGuid = new Guid(Convert.FromBase64String(shortGuid + "=="));
 
             return reconstructedGuid;
+        }
+
+        public static bool IsDigit1(char ch)
+        {
+            // is this char a basic number? like Regex regexDigit = new Regex("[^0-9]");
+            // NOT extended ASCII, 1/2 etc.
+#if false   // false true 
+            return ch >= '0' && ch <= '9';
+#else
+            return char.IsDigit(ch);   // NOT char.IsNumber
+#endif
+        }
+
+        public static bool HasUpperCase([NotNullWhen(true)] string? str)
+        {
+            // IsUpper for extended ASCII 
+            return !string.IsNullOrEmpty(str) && str.Any(c => char.IsUpper(c));
+        }
+        public static bool HasLowerCase([NotNullWhen(true)] string? str)
+        {
+            // IsLower for extended ASCII 
+            return !string.IsNullOrEmpty(str) && str.Any(c => char.IsLower(c));
+        }
+
+        public static bool HasNumber([NotNullWhen(true)] string? str)
+        {
+            // allow extended IsNumber for 1/2 etc
+            return !string.IsNullOrEmpty(str) && str.Any(c => char.IsNumber(c));
         }
 
         /// <summary>

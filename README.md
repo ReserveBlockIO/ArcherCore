@@ -29,7 +29,9 @@ ArcherCore is a collection of common tools used in C# (in my opinion) that are s
 
 This library current has utils for the following:
 - Compression
+- Credit Cards
 - CSV Reader
+- Dates
 - ECDSA
 - Email
 - Encryption
@@ -42,12 +44,14 @@ This library current has utils for the following:
 - Logging (Both Text File and DB)
 - Memory
 - Numbers
+- Passwords
 - Pinging
 - Port Checking
 - Randomization
 - Strings
 - Time
 - Timers
+- Valid States
 - Web Request
 - Web Server
 
@@ -135,6 +139,7 @@ ArcherCore is released under the terms of the MIT license. See [COPYING](COPYING
 information or see https://opensource.org/licenses/MIT.
 
 ### References, Libraries, and Thank you's ###
+This code was compiled from 12+ years of projects and random things. If you notice it is similar to something of yours please let me know and I will happily give you credit.
 
 * LiteDB 
 * Newtonsoft.Json 

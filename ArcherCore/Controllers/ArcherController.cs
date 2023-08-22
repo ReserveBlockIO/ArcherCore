@@ -20,6 +20,10 @@ namespace ArcherCore.Controllers
             return new string[] { "Archer", "API V1.0" };
         }
 
+        /// <summary>
+        /// Returns logs from text file
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("GetLogsFromText")]
         public async Task<string> GetLogsFromText()
         {
@@ -33,6 +37,23 @@ namespace ArcherCore.Controllers
             {
                 return JsonConvert.SerializeObject(new { Success = false, Logs = "" }, Formatting.Indented);
             }
+        }
+
+        /// <summary>
+        /// Returns logs from DB
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("GetLogsFromDb")]
+        public async Task<string> GetLogsFromDb()
+        {
+            if(!LoggingVariables.UseDb)
+                return JsonConvert.SerializeObject(new { Success = false, Logs = new List<LoggingModel>() }, Formatting.Indented);
+            var logs = await LoggingUtilities.GetLog();
+            
+            if(logs == null)
+                return JsonConvert.SerializeObject(new { Success = false, Logs = new List<LoggingModel>() }, Formatting.Indented);
+
+            return JsonConvert.SerializeObject(new { Success = true, Logs = logs }, Formatting.Indented);
         }
 
         /// <summary>

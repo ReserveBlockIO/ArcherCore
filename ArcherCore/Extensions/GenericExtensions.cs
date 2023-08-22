@@ -27,7 +27,24 @@ namespace ArcherCore.Extensions
             }
             return byteArray;
         }
+        public static int ToInt(this Enum value)
+        {
+            // when casting to int seems strange.
+            // https://stackoverflow.com/questions/943398/get-int-value-from-enum-in-c-sharp
+            return Convert.ToInt32(value);
+        }
+        public static bool IsExtremeDate(this DateTime obj)
+        {
+            // Is this a basically useless date? NOTE: DateTime is not nullable.
+            return Dates.DateUtilities.IsExtremeDate(obj);
+        }
 
+        public static bool IsExtremeDate(this DateTime? obj)
+        {
+            if (obj == null)
+                return true;
+            return Dates.DateUtilities.IsExtremeDate(obj.Value);
+        }
         public static long ToUnixTimeSeconds(this DateTime obj)
         {
             long unixTime = ((DateTimeOffset)obj).ToUnixTimeSeconds();
@@ -106,6 +123,15 @@ namespace ArcherCore.Extensions
                     Marshal.ZeroFreeBSTR(ss_bstr2_ptr);
                 }
             }
+        }
+        public static SecureString ToSecureString(this string source)
+        {
+            var secureStr = new SecureString();
+            if (source.Length > 0)
+            {
+                foreach (var c in source.ToCharArray()) secureStr.AppendChar(c);
+            }
+            return secureStr;
         }
 
         public static string ToUnsecureString(this SecureString source)
