@@ -18,7 +18,19 @@
 	<RepositoryType>git</RepositoryType>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
 	<PackageTags>archercore;commontools;cutilities;cutils</PackageTags>
+	<ApplicationIcon>Assets\Icons\aclogoicon.ico</ApplicationIcon>
+	<PackageIcon>aclogo.png</PackageIcon>
+	
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\Icons\aclogoicon.ico" />
+    <Content Include="Assets\Images\aclogo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Database\" />
@@ -42,6 +54,13 @@
     <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.5.0" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Assets\Images\aclogo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
