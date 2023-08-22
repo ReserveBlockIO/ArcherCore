@@ -15,6 +15,10 @@ C# library with a wide variety of tools and utilities in one easy to use locatio
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/mathis1337/ArcherCore)
 ![GitHub last commit](https://img.shields.io/github/last-commit/mathis1337/ArcherCore)
 
+Nuget: https://www.nuget.org/packages/ArcherCore
+
+`> dotnet add package ArcherCore --version 1.0.0`
+
 # What is ArcherCore?
 ArcherCore is a collection of common tools used in C# (in my opinion) that are simplified and housed in one easy to use library.
 
