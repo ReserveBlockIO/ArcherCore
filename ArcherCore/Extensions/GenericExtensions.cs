@@ -1,28 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO.Compression;
 using System.Linq;
 using System.Reflection.Metadata;
 using System.Runtime.InteropServices;
 using System.Security;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace ArcherCore.Extensions
 {
     public static class GenericExtensions
     {
-        /// <summary>
-        /// Takes a file path string and returns its extension
-        /// </summary>
-        /// <param name="source">string</param>
-        /// <returns>string extensions. Ex: '.txt'</returns>
-        public static string ToFileExtension(this string source)
-        {
-            string myFilePath = source;
-            string ext = Path.GetExtension(myFilePath);
-            return ext;
-        }
+        
         public static byte[] ImageToByteArray(this byte[] imageBytes)
         {
             byte[] byteArray;
@@ -140,143 +132,6 @@ namespace ArcherCore.Extensions
 
             return byteToBase64;
         }
-
-        public static string ToBase64(this string source)
-        {
-            var plainTextBytes = Encoding.UTF8.GetBytes(source);
-            var stringToBase64 = Convert.ToBase64String(plainTextBytes);
-
-            return stringToBase64;
-        }
-
-        public static string ToStringFromBase64(this string source)
-        {
-            var base64EncodedString = Convert.FromBase64String(source);
-            var stringFromBase64 = Encoding.UTF8.GetString(base64EncodedString);
-
-            return stringFromBase64;
-        }
-        public static byte[] FromBase64ToByteArray(this string base64String)
-        {
-            var byteArrayFromBase64 = Convert.FromBase64String(base64String);
-
-            return byteArrayFromBase64;
-        }
-
-        /// <summary>
-        /// Converts a string array into a space delimited string
-        /// </summary>
-        /// <returns>Space delimited string</returns>
-        public static string ToStringFromArray(this string[] source)
-        {
-            var output = string.Join(" ", source);
-
-            return output;
-        }
-
-        public static byte[] ToCompress(this byte[] bytes)
-        {
-            using (var memoryStream = new MemoryStream())
-            {
-                using (var gzipStream = new GZipStream(memoryStream, CompressionLevel.Optimal))
-                {
-                    gzipStream.Write(bytes, 0, bytes.Length);
-                }
-                return memoryStream.ToArray();
-            }
-        }
-        public static byte[] ToDecompress(this byte[] s)
-        {
-            var bytes = s;
-            using (var msi = new MemoryStream(bytes))
-            using (var mso = new MemoryStream())
-            {
-                using (var gs = new GZipStream(msi, CompressionMode.Decompress))
-                {
-                    gs.CopyTo(mso);
-                }
-                return mso.ToArray();
-            }
-        }
-        public static string ToCompress(this string s)
-        {
-            var bytes = Encoding.Unicode.GetBytes(s);
-            using (var msi = new MemoryStream(bytes))
-            using (var mso = new MemoryStream())
-            {
-                using (var gs = new GZipStream(mso, CompressionMode.Compress))
-                {
-                    msi.CopyTo(gs);
-                }
-                return Convert.ToBase64String(mso.ToArray());
-            }
-        }
-
-        public static string ToDecompress(this string s)
-        {
-            var bytes = Convert.FromBase64String(s);
-            using (var msi = new MemoryStream(bytes))
-            using (var mso = new MemoryStream())
-            {
-                using (var gs = new GZipStream(msi, CompressionMode.Decompress))
-                {
-                    gs.CopyTo(mso);
-                }
-                return Encoding.Unicode.GetString(mso.ToArray());
-            }
-        }
-        public static int ToWordCount(this string text)
-        {
-            int wordCount = 0, index = 0;
-
-            // skip whitespace until first word
-            while (index < text.Length && char.IsWhiteSpace(text[index]))
-                index++;
-
-            while (index < text.Length)
-            {
-                // check if current char is part of a word
-                while (index < text.Length && !char.IsWhiteSpace(text[index]))
-                    index++;
-
-                wordCount++;
-
-                // skip whitespace until next word
-                while (index < text.Length && char.IsWhiteSpace(text[index]))
-                    index++;
-            }
-
-            return wordCount;
-        }
-        public static bool ToWordCountCheck(this string text, int count)
-        {
-            int wordCount = 0, index = 0;
-
-            // skip whitespace until first word
-            while (index < text.Length && char.IsWhiteSpace(text[index]))
-                index++;
-
-            while (index < text.Length)
-            {
-                // check if current char is part of a word
-                while (index < text.Length && !char.IsWhiteSpace(text[index]))
-                    index++;
-
-                wordCount++;
-
-                // skip whitespace until next word
-                while (index < text.Length && char.IsWhiteSpace(text[index]))
-                    index++;
-
-                if (wordCount > count)
-                    break;
-            }
-
-            if (wordCount > count)
-                return false;
-            return true;
-        }
-
         
         public static void ToShuffle<T>(this IList<T> list)
         {
@@ -291,13 +146,6 @@ namespace ArcherCore.Extensions
                 list[n] = value;
             }
         }
-
-        public static string ToStringReverse(this string source)
-        {
-            string strReversed = new string(source.Reverse().ToArray());
-            return strReversed;
-        }
-
         public static T[] ToLinkedListReverse<T>(this LinkedList<T> source)
         {
             var head = source.First;

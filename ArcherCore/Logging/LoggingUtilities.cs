@@ -22,6 +22,24 @@ namespace ArcherCore.Logging
             LoggingVariables.LogQueue.Enqueue((message, logType, location, DateTime.Now));
         }
 
+        public static async Task<string[]?> GetLogFromText()
+        {
+            try
+            {
+                var path = Path.Combine(LoggingVariables.LoggingPath, "Log.txt");
+                var fileExist = File.Exists(path);
+                if (fileExist)
+                {
+                    var readLogLines = await File.ReadAllLinesAsync(path);
+                    return readLogLines;
+                }
+
+            }
+            catch(Exception ex) { Console.WriteLine(ex.ToString()); }
+            
+            return null;
+        }
+
         /// <summary>
         /// Gets the most recent 100 records by default for a log
         /// </summary>

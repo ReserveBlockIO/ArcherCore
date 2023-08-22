@@ -15,6 +15,22 @@ namespace ArcherCore
 {
     public static class Archer
     {
+        public static async Task RunAllSetupWithDefaults(bool skipWebserver = true)
+        {
+            await SetupHttpClientFactory();
+            await SetupMemoryLogger();
+            await SetupLogging();
+            await ForceUSCulture();
+            string[] argsForWebserver = new string[] { };
+            if (!skipWebserver)
+                await SetupWebServer(argsForWebserver);
+        }
+
+        public static async Task SetupWebServer(string[] args)
+        {
+            _ = WebServer.Server.Main(args); ;
+        }
+
         public static async Task SetupEmail(string host, int port, SmtpDeliveryMethod deliveryMethod, bool enableSsl = true, bool useDefaultCreds = false)
         {
             EmailVariables.Host = host;

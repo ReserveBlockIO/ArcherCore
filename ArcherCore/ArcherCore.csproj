@@ -1,17 +1,37 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <OutputType>Library</OutputType>
+	<Description>ArcherCore Nuget for Common tools and utilities</Description>
+	<Copyright>MIT</Copyright>
+	<PackageProjectUrl>https://github.com/mathis1337/ArcherCore</PackageProjectUrl>
+	<RepositoryUrl>https://github.com/mathis1337/ArcherCore</RepositoryUrl>
+	<Version>1.0.0</Version>
+	<Company>Mathis1337</Company>
+	<Authors>Mathis1337</Authors>
+	<PackAsTool>False</PackAsTool>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<Title>ArcherCore</Title>
+	<RepositoryType>git</RepositoryType>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+	<PackageTags>archercore;commontools;cutilities;cutils</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
     <Folder Include="Database\" />
     <Folder Include="BackgroundTask\" />
-    <Folder Include="Compression\" />
     <Folder Include="Backup\" />
-    <Folder Include="Port\" />
+    <Folder Include="Properties\PublishProfiles\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
@@ -19,6 +39,9 @@
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
     <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.5.0" />
   </ItemGroup>
 
 </Project>

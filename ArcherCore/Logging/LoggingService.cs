@@ -24,7 +24,7 @@ namespace ArcherCore.Logging
                     {
                         if(!LoggingVariables.UseDb)
                         {
-                            var text = "[" + content.Time + "]" + "[" + content.LogType + "]" + " : " + "[" + content.Location + "]" + " : " + content.Message;
+                            var text = "[" + content.Time + "]" + "[" + content.LogType + "]" + "<|!*!|>" + "[" + content.Location + "]" + "<|!*!|>" + content.Message;
                             await File.AppendAllTextAsync(LoggingVariables.LoggingPath + "Log.txt", Environment.NewLine + text);
                         }
                         else

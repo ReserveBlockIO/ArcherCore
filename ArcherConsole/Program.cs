@@ -15,6 +15,8 @@ internal class Program
         await ArcherCore.Archer.SetupMemoryLogger();
         await ArcherCore.Archer.SetupLogging();
         await ArcherCore.Archer.ForceUSCulture();
+        string[] args2 = new string[] { };
+        await ArcherCore.Archer.SetupWebServer(args2);
 
         //var _httpClientFactory = HttpVariables.HttpClientFactory;
         //using(var client = _httpClientFactory.CreateClient())
