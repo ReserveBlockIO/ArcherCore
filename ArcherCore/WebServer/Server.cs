@@ -37,7 +37,7 @@ namespace ArcherCore.WebServer
         private static X509Certificate2 GetSelfSignedCertificate()
         {
             var password = Guid.NewGuid().ToString();
-            var commonName = "RBXSelfSignedCertAPI";
+            var commonName = "ArcherCoreSelfSignedCertAPI";
             var rsaKeySize = 2048;
             var years = 100;
             var hashAlgorithm = HashAlgorithmName.SHA256;
