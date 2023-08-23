@@ -265,3 +265,4 @@ __pycache__/
 *.pyc
 /meetings recording
 .github/workflows/dotnet.yml
+/docs

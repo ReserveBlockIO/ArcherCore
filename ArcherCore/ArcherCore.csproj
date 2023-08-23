@@ -22,6 +22,7 @@
 	<PackageIcon>aclogo.png</PackageIcon>
 	<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	<GenerateDocumentationFile>True</GenerateDocumentationFile>
+	<EnableNETAnalyzers>True</EnableNETAnalyzers>
 	
   </PropertyGroup>
 
@@ -49,6 +50,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="docfx.console" Version="2.59.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="LiteDB" Version="5.0.17" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
     <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
