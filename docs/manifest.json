@@ -1,0 +1,1053 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/Aaron/Documents/GitHub/ArcherCore/ArcherCore",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.APIs.APIUtilities.Author.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.APIs.APIUtilities.Author.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.APIs.APIUtilities.Release.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.APIs.APIUtilities.Release.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.APIs.APIUtilities.ReleaseAsset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.APIs.APIUtilities.ReleaseAsset.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.APIs.APIUtilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.APIs.APIUtilities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.APIs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.APIs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Archer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Archer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.CSV.CSVUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.CSV.CSVUtility.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.CSV.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.CSV.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Compression.CompressionUtilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Compression.CompressionUtilities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Compression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Compression.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Controllers.ArcherController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Controllers.ArcherController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Controllers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.CreditCard.CreditCardTypeId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.CreditCard.CreditCardTypeId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.CreditCard.CreditCardUtilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.CreditCard.CreditCardUtilities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.CreditCard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.CreditCard.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Dates.DateUtilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Dates.DateUtilities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Dates.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Dates.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.EllipticCurve.Base64.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.EllipticCurve.Base64.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.EllipticCurve.BinaryAscii.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.EllipticCurve.BinaryAscii.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.EllipticCurve.Bytes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.EllipticCurve.Bytes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.EllipticCurve.CurveFp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.EllipticCurve.CurveFp.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.EllipticCurve.Curves.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.EllipticCurve.Curves.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.EllipticCurve.Der.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.EllipticCurve.Der.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.EllipticCurve.Ecdsa.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.EllipticCurve.Ecdsa.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.EllipticCurve.EcdsaMath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.EllipticCurve.EcdsaMath.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.EllipticCurve.Integer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.EllipticCurve.Integer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.EllipticCurve.Point.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.EllipticCurve.Point.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.EllipticCurve.PrivateKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.EllipticCurve.PrivateKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.EllipticCurve.PublicKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.EllipticCurve.PublicKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.EllipticCurve.Signature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.EllipticCurve.Signature.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.EllipticCurve.String.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.EllipticCurve.String.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.EllipticCurve.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.EllipticCurve.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Email.EmailUtilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Email.EmailUtilities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Email.EmailVariables.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Email.EmailVariables.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Email.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Email.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Encryption.EncryptionUtilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Encryption.EncryptionUtilities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Encryption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Encryption.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Extensions.CompressionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Extensions.CompressionExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Extensions.CompressionResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Extensions.CompressionResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Extensions.CompressionValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Extensions.CompressionValue.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Extensions.ConversionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Extensions.ConversionExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Extensions.GenericExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Extensions.GenericExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Extensions.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Extensions.StringExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Extensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Files.FileDownloadUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Files.FileDownloadUtility.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Files.FileFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Files.FileFormat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Files.FileUtilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Files.FileUtilities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Files.FileVariables.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Files.FileVariables.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Files.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Files.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Hashing.HashingUtilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Hashing.HashingUtilities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Hashing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Hashing.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Http.HttpService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Http.HttpService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Http.HttpUtilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Http.HttpUtilities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Http.HttpVariables.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Http.HttpVariables.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Http.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Http.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.IP.IPUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.IP.IPUtility.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.IP.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.IP.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Logging.LoggingModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Logging.LoggingModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Logging.LoggingService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Logging.LoggingService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Logging.LoggingUtilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Logging.LoggingUtilities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Logging.LoggingVariables.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Logging.LoggingVariables.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Logging.Try.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Logging.Try.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Logging.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Logging.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Memory.MemoryService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Memory.MemoryService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Memory.MemoryUtilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Memory.MemoryUtilities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Memory.MemoryVariables.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Memory.MemoryVariables.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Memory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Memory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Numbers.NumberUtilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Numbers.NumberUtilities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Numbers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Numbers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Passwords.PasswordReq.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Passwords.PasswordReq.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Passwords.PasswordUtilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Passwords.PasswordUtilities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Passwords.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Passwords.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Pings.Pings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Pings.Pings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Pings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Pings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Platform.PlatformUtilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Platform.PlatformUtilities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Platform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Platform.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Port.PortUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Port.PortUtility.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Port.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Port.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Randomization.RandomUtilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Randomization.RandomUtilities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Randomization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Randomization.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Strings.StringUtilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Strings.StringUtilities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Strings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Strings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Time.TimeUtilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Time.TimeUtilities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Time.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Time.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Timers.Timer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Timers.Timer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Timers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Timers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Validation.IValidatable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Validation.IValidatable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Validation.IValidatorT-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Validation.IValidatorT-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Validation.ValidField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Validation.ValidField.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Validation.ValidLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Validation.ValidLevel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Validation.ValidState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Validation.ValidState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.Validation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.Validation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.WebRequest.WebRequestUtilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.WebRequest.WebRequestUtilities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.WebRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.WebRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.WebServer.Server.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.WebServer.Server.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.WebServer.Startup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.WebServer.Startup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.WebServer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.WebServer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ArcherCore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ArcherCore.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
