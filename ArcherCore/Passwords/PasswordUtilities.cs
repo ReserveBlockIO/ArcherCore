@@ -107,11 +107,6 @@ namespace ArcherCore.Passwords
 
         public static bool IsRandomish(string s)
         {
-            // Is this in general a valid password/ bearer token ? 
-            // When the client sends us a token. This makes sure its at least moderately likely to be safe.
-            // https://stats.stackexchange.com/questions/371150/check-if-a-character-string-is-not-random
-            // https://en.wikipedia.org/wiki/Diehard_tests
-            // https://en.wikipedia.org/wiki/Randomness_tests
 
             if (s == null)
                 return false;

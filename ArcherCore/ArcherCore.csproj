@@ -20,6 +20,8 @@
 	<PackageTags>archercore;commontools;cutilities;cutils</PackageTags>
 	<ApplicationIcon>Assets\Icons\aclogoicon.ico</ApplicationIcon>
 	<PackageIcon>aclogo.png</PackageIcon>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	<GenerateDocumentationFile>True</GenerateDocumentationFile>
 	
   </PropertyGroup>
 
