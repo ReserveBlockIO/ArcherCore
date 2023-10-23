@@ -19,7 +19,7 @@ C# library with a wide variety of tools and utilities in one easy to use locatio
 
 Nuget: https://www.nuget.org/packages/ArcherCore
 
-`> dotnet add package ArcherCore --version 1.0.0`
+`> dotnet add package ArcherCore --version 1.1.1`
 
 # What is ArcherCore?
 ArcherCore is a collection of common tools used in C# (in my opinion) that are simplified and housed in one easy to use library.

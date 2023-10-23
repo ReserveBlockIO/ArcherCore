@@ -14,7 +14,7 @@ namespace ArcherCore.WebRequest
 {
     public static class WebRequestUtilities
     {
-        public static async Task<string> GetWebRequest(string url)
+        public static async Task<HttpResponseMessage> GetWebRequest(string url)
         {
             try
             {
@@ -22,58 +22,68 @@ namespace ArcherCore.WebRequest
                 using (var client = _httpClientFactory.CreateClient())
                 {
                     var httpResponse = await client.GetAsync(url);
-                    var responseString = await httpResponse.Content.ReadAsStringAsync();
 
-                    return responseString;
+                    return httpResponse;
                 }
             }
-            catch (Exception ex) { return ex.ToString(); }
-            
+            catch (Exception ex) { return new HttpResponseMessage { StatusCode = HttpStatusCode.Conflict, 
+                ReasonPhrase = $"Unknown Error Occured. Error: {ex.ToString()}"}; }
+
         }
-        public static async Task<string> GetWebRequest(string url, Dictionary<string, string> headers)
+        public static async Task<HttpResponseMessage> GetWebRequest(string url, Dictionary<string, string> headers)
         {
             try
             {
                 var _httpClientFactory = HttpVariables.HttpClientFactory;
                 using (var client = _httpClientFactory.CreateClient())
                 {
-                    
+
                     foreach (var header in headers)
                     {
                         client.DefaultRequestHeaders.Add(header.Key, header.Value);
                     }
-                    
-                    var httpResponse = await client.GetAsync(url);
-                    var responseString = await httpResponse.Content.ReadAsStringAsync();
 
-                    return responseString;
+                    var httpResponse = await client.GetAsync(url);
+                    return httpResponse;
                 }
             }
-            catch (Exception ex) { return ex.ToString(); }
+            catch (Exception ex)
+            {
+                return new HttpResponseMessage
+                {
+                    StatusCode = HttpStatusCode.Conflict,
+                    ReasonPhrase = $"Unknown Error Occured. Error: {ex.ToString()}"
+                };
+            }
         }
-        public static async Task<string> GetWebRequest(string url, Dictionary<string, IEnumerable<string?>> headerList)
+        public static async Task<HttpResponseMessage> GetWebRequest(string url, Dictionary<string, IEnumerable<string?>> headerList)
         {
             try
             {
                 var _httpClientFactory = HttpVariables.HttpClientFactory;
                 using (var client = _httpClientFactory.CreateClient())
                 {
-                    
+
                     foreach (var header in headerList)
                     {
                         client.DefaultRequestHeaders.Add(header.Key, header.Value);
                     }
-                    
-                    var httpResponse = await client.GetAsync(url);
-                    var responseString = await httpResponse.Content.ReadAsStringAsync();
 
-                    return responseString;
+                    var httpResponse = await client.GetAsync(url);
+                    return httpResponse;
                 }
             }
-            catch (Exception ex) { return ex.ToString(); }
+            catch (Exception ex)
+            {
+                return new HttpResponseMessage
+                {
+                    StatusCode = HttpStatusCode.Conflict,
+                    ReasonPhrase = $"Unknown Error Occured. Error: {ex.ToString()}"
+                };
+            }
         }
 
-        public static async Task<string> GetWebRequest(string url, Dictionary<string, string>? headers = null, Dictionary<string, IEnumerable<string?>>? headerList = null)
+        public static async Task<HttpResponseMessage> GetWebRequest(string url, Dictionary<string, string>? headers = null, Dictionary<string, IEnumerable<string?>>? headerList = null)
         {
             try
             {
@@ -96,14 +106,18 @@ namespace ArcherCore.WebRequest
                         }
                     }
                     var httpResponse = await client.GetAsync(url);
-                    var responseString = await httpResponse.Content.ReadAsStringAsync();
-
-                    return responseString;
+                    return httpResponse;
                 }
             }
-            catch(Exception ex) { return ex.ToString(); }
+            catch (Exception ex)
+            {
+                return new HttpResponseMessage
+                {
+                    StatusCode = HttpStatusCode.Conflict,
+                    ReasonPhrase = $"Unknown Error Occured. Error: {ex.ToString()}"
+                };
+            }
         }
-
         public static async Task<(bool, string)> PostWebRequest(string endpoint, string content, Encoding? encodingType = null, string? mediaType = "application/json")
         {
             try
