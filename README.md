@@ -24,6 +24,9 @@ Nuget: https://www.nuget.org/packages/ArcherCore
 # What is ArcherCore?
 ArcherCore is a collection of common tools used in C# (in my opinion) that are simplified and housed in one easy to use library.
 
+#ArcherCore and RBX
+This was added to bring many new tools to the Trillium Language.
+
 ### ArcherCore Is Built on the Following ###
 
 * C#
